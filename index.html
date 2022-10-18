@@ -5,20 +5,31 @@
 		#menu{
 			width: 100%;
 			height: 805px;
-			background-image: url(https://htmlcolorcodes.com/assets/images/colors/baby-blue-color-solid-background-1920x1080.png);
-			margin: 0%;
+			background-color: lightblue;;
+			
 
+		}
+		body{
+			margin: 0px;
 		}
 		.button{
+			width: 33%;
+			height: 70px;
 			font-family: sans-serif;
-			color: white;
-			font-size: 40px;
-			display: inline-block;
+			font-size: 5vw;
 			text-align: center;
+			transition: 2s;
+			padding-top: 20spx;
+			display: inline-block;
 
 
 		}
-
+.button:hover{
+	background-color: blue;
+	transition: 1s;
+	width: 40%;
+	height: 100px;
+}
 	</style>
 
 	<table>
@@ -34,20 +45,28 @@
 	</a>
 
 <div id="menu">
-	<div id="journal" class="button"></div>
+	
 <p>
 	<a href="journal.html">
-
+<div id="journal" class="button"></div>
 	Journal
 </a>
 </p>
-	<div id="projects" class="button"></div>
+	
 <p>
 	<a href="project.html">
+		<div id="projects" class="button"></div>
 		Projects
 	</a>
 </p>
-	<div id="about me" class="button"></div>
+	
+	<p>
+		<a href="about me">
+			<div id="about me" class="button"></div>
+		About Me	
+		</a>
+		
+	</p>
 </div>
 </body>
 </html>
