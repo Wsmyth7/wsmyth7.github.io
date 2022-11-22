@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	
+		#photo{
+			width: 750px;
+			height: 750px;
+			background-image: url(Connor.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin: auto;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+	<div id="photo"></div>
+<audio id="music" src="HappyBirthday.mp3"></audio>
+<script type="text/javascript">
+	
+	var clickCounter = 0
+	photo.addEventListener(
+		"click", function(){
+			clickCounter = clickCounter+1
+
+				if (clickCounter%2 ==1) 
+					{music.pause();
+						photo.style.backgroundImage = "url(YoungConnor.jpg)"
+
+						if (clickCounter%2 ==0)
+							{music.play();
+								photo.style.backgroundImage = "url(Connor.png)"
+
+						}
+					}
+			})
+</script>
+
+
+
+</body>
+</html>
