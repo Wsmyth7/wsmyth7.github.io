@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#box{
+			width: 500px;
+			height: 500px;
+			border: 3px navy;
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<p>Click on the box to view a different 2021-22 Yankee player.</p>
+
+<div id="box"></div>
+</center>
+<script type="text/javascript">
+	
+var players = ["Gerrit Cole", "Nestor Cortes", "Luis Severino", "Frankie Montas", "Domingo German", "Clarke Schmidt", "Clay Holmes", "Jonathan Loaisiga", "Wandy Peralta", "Lou Trivino", "Ron Marinaccio", "Michael King", "Lucas Luetge", "Greg Weissert", "Albert Abreu", "Jose Trevino", "Kyle Higashioka", "DJ LeMahieu", "Gleyber Torres", "Oswaldo Cabrera", "Josh Donalson", "Isiah Kiner-Falefa", "Oswald Pereza", "Aaron Hicks", "Giancarlo Stanton", "Estevan Florial", "Harrison Bader", "Aaron Judge"]
+
+box.addEventListener("click",function(){
+
+	var random = Math.round(Math.random()*27);
+
+box.innerText = players[random]
+	})
+
+</script>
+
+</body>
+</html>
