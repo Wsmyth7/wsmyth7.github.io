@@ -6,7 +6,7 @@
         background-color: lightpink;
       }
       #heart {
-        width: 500px;
+        width: 700px;
         height: 550px;
         background-size: contain;
         background-position: center;
@@ -22,51 +22,30 @@
 
 
       .open {
-        background-image: url("inside-heart.png");
+        background-image: url("parker2.png");
       }
         #donkey{
-        width: 500px;
+        width: 700px;
         height: 550px;
         right: 500pxx;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-}
-      .tiger{
-         background-image: url("heart.png");
-         right: 300px;
-
-      }
-
-
-      .elephant {
-        background-image: url("parker2.png");
-        right: 300px;
       }
     </style>
   </head>
   <body>
     <div id="background"></div>
     <div class="closed" id="heart"></div>
-    <div class="tiger" id="donkey"></div>
     <script>
 
-      heart.addEventListener("click", function() {
-        heart.classList.toggle("open");
+      heart.addEventListener("click", function() {(
+        heart.classList.toggle("open")
          heart.classList.toggle("closed");
 
         console.log(heart)
 
- apple.addEventListener("click", function() {
-        apple.classList.toggle("elephant");
-         apple.classList.toggle("tiger");
-
-        console.log(apple)
-
-      });
-
-
-
+)};
 
 
     </script>
