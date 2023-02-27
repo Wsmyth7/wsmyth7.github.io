@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	.DONKEY{
+		width: 100px;
+		height: 100px;
+		background-image: url(hearts.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+	}
+
+	</style>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+document.addEventListener("mousemove", 
+function makeHearts (){
+	var heart = document.createElement('div');
+	document.body.appendChild(heart)
+	heart.classList.add('DONKEY')
+	heart.style.left = event.clientX + "px"
+	heart.style.top = event.clientY + "px"
+})
+
+
+
+	
+</script>
+</body>
+</html>

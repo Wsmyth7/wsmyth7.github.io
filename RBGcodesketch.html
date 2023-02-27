@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<style type="text/css">
+		#pic1{
+			width: 25%;
+			height: 1000px;
+			background-color: darkred;
+			margin: 0;
+			padding: 0;
+			border: none;
+			/*position: absolute;*/
+			display: inline-block;
+
+		}
+
+		#pic2{
+			width: 25%;
+			height: 1000px;
+			background-color: navy;
+			margin: 0;
+			padding: 0;
+			border: none;
+			display: inline-block;
+			/*position: absolute;
+			left: 368px;*/
+		}
+
+		#pic3{
+			width: 25%;
+			height: 1000px;
+			background-color: seagreen;
+			margin: 0;
+			padding: 0;
+			border: none;
+			display: inline-block;
+
+			/*position: absolute;
+			left: 728px;*/
+		}
+
+		#pic4{
+			width: 23%;
+			height: 1000px;
+			background-color: yellow;
+			margin: 0;
+			padding: 0;
+			border: none;
+/*			position: absolute;
+*//*			left: 1088px;
+*/			display: inline-block;
+		}
+
+
+		body{
+			margin: 0px;
+		}
+	</style>
+		
+</head>
+<body>
+
+<div  id="pic1"></div>
+<div  id="pic2"></div>
+<div  id="pic3"></div>
+<div  id="pic4"></div>
+<script type="text/javascript">
+document.addEventListener("mousemove", function(
+	event){
+	console.log(event.clientX, event.clientY)
+	pic1.style.backgroundColor = "rgb(0," + event.clientX/3 + "," + event.clientY +")";
+
+	pic2.style.backgroundColor = "rgb(0," + event.clientX/4 + "," + event.clientY +")";
+
+	pic3.style.backgroundColor = "rgb(0," + event.clientX/5 + "," + event.clientY +")";
+
+	pic4.style.backgroundColor = "rgb(0," + event.clientX/6 + "," + event.clientY +")";
+
+})
+</script>
+
+</body>
+</html>
