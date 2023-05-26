@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#pic1{
+			width: 100px;
+			height: 100px;
+			background-color: darkred;
+			margin: 0;
+			padding: 0;
+			border: none;
+			display: inline-block;
+			position: absolute;
+			background-size: contain;
+			background-repeat: no-repeat;
+
+		}
+	</style>
+</head>
+<body>
+<div id="pic1"></div>
+<script type="text/javascript">
+document.addEventListener("mousemove", function(
+	event){
+	console.log(event.clientX, event.clientY)
+	pic1.style.backgroundColor = "rgb(0," + event.clientX/3 + "," + event.clientY +")";
+})
+document.addEventListener("mousemove", function(event){
+		console.log(event.clientX, event.clientY)
+		pic1.style.top = event.clientY - 50 + "px"
+		pic1.style.left = event.clientX - 50 + "px"
+	})
+
+</script>
+</body>
+</html>

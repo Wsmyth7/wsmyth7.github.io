@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess Puzzles</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .puzzle {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chess Puzzles</h1>
+    
+    <div class="puzzle">
+        <h2>Puzzle 1</h2>
+        <div id="board1"></div>
+        <button onclick="solvePuzzle(1)">Show Solution</button>
+    </div>
+    
+    <div class="puzzle">
+        <h2>Puzzle 2</h2>
+        <div id="board2"></div>
+        <button onclick="solvePuzzle(2)">Show Solution</button>
+    </div>
+    
+    <!-- Add more puzzle sections as needed -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/chessboardjs/dist/chessboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chess.js"></script>
+    <script>
+        // Create a Chess instance
+        var chess = new Chess();
+        
+        // Generate a random puzzle position
+        function generatePuzzle() {
+            chess.clear();
+            chess.reset();
+            
+            // Modify the chess position to create a puzzle
+            
+            // Return the puzzle position as a FEN string
+            return chess.fen();
+        }
+        
+        // Render the puzzle on the chessboard
+        function renderPuzzle(boardId, fen) {
+            var board = Chessboard(boardId, fen);
+        }
+        
+        // Solve the puzzle and display the solution
+        function solvePuzzle(puzzleNumber) {
+            // Implement the puzzle solution here
+            
+            // Example solution:
+            alert("Solution to Puzzle " + puzzleNumber + ": Move the Knight to capture the opponent's piece.");
+        }
+        
+        // Generate puzzles and render them on the page
+        function initializePuzzles() {
+            renderPuzzle("board1", generatePuzzle());
+            renderPuzzle("board2", generatePuzzle());
+            // Add more puzzles as needed
+        }
+        
+        // Initialize puzzles when the page loads
+        window.onload = initializePuzzles;
+    </script>
+</body>
+</html>

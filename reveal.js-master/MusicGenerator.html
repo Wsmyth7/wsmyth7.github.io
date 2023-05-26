@@ -1,0 +1,104 @@
+<head>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="header">
+      <h1>Random Song Generator</h1>
+      <h3>With Lyrics</h3>
+    </div>
+    
+    <div class="body">
+      <div class = "main">
+      <div class ="song" >
+        <iframe id = "song1" src=""></iframe>
+      </div>
+      
+      <div class ="lyrics" id= "twitter-wjs">
+        <iframe id = "lyrics1" src="" height = "auto" ></iframe>
+      </div>
+      </div>
+      <div class="button">
+        <button onclick="GetSong()">Get Song!</button>
+        <div class="row">
+        <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Hello%20world"
+  data-size="large">
+Tweet</a>
+        </div>
+     </div>
+  </div>
+  <style type="text/css">
+    .header{
+  text-align: center;
+  
+}
+.main{
+  display:block;
+
+}
+.song{
+  height: 300px;
+  width: 33%;
+  float: left;
+  border: solid 1px;
+  margin-left: 5%;
+}
+
+.lyrics{
+  height: 300px;
+  width: 33%;
+  float: right;
+  border: solid 1px;
+  margin-right: 5%;
+  
+}
+.button{
+  diplay: block;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 44%;
+}
+
+button{
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-right: 5px;
+  background-color: green;
+  color: yellow;
+  font-size: 20px;
+  
+}
+
+.row{
+  margin-top: 15px;
+  padding-left 15px;
+}
+
+h1, h3{
+  text-shadow: 2px 2px orange; 
+  color: darkblue;
+}
+
+::-webkit-scrollbar 
+{
+    width: 40px;
+    background-color:#4F4F4F;
+}
+
+::-webkit-scrollbar-button:vertical:increment 
+{
+    height:40px;
+    background-image: url(/Images/Scrollbar/decrement.png);
+    background-size:39px 30px;
+    background-repeat:no-repeat;
+}
+
+  </style>
+  <script type="text/javascript">
+    
+function GetSong(){
+var song = 
+ [{song1:'https://www.youtube.com/embed/0IJfbsN7fpU', lyrics1: 'http://www.azlyrics.com/lyrics/glassanimals/gooey.html'}, {song1:'https://www.youtube.com/embed/hi4pzKvuEQM', lyrics1: 'http://www.azlyrics.com/lyrics/chetfaker/gold.html'}, {song1:'https://www.youtube.com/embed/DZ6yrWkdaJw', lyrics1: 'http://www.bmichellepippin.com/wp-content/uploads/2012/06/633800769542445665-CAPTAINOBVIOUS.jpg'}];
+
+  </script>
